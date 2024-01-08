@@ -47,7 +47,14 @@ function onClick(evt) {
     instance = basicLightbox.create(`<img class="gallery__image" 
     src="${target.getAttribute("data-source")}" 
     alt="${target.alt}"/>`);
+
     // console.log(instance);
+    // onShow: (instance) => {
+    //     instance = basicLightbox.create(`<img class="gallery__image" 
+    //     src="${target.getAttribute("data-source")}" 
+    //     alt="${target.alt}"/>`);
+    // };
+
     instance.show();
 };
 
@@ -57,6 +64,13 @@ galleryList.addEventListener("keydown", (evtClose) => {
         instance.close();
     };
 });
+// onClose: (instance) => {
+//     galleryList.addEventListener("keydown", (evtClose) => {
+//         if (evtClose.key === "Escape") {
+//             instance.close();
+//         };
+//     });
+// };
 
 
 // Правильна реалізація додавання і видалення слухачів для window в завданні 1 вимагає застосування цих опцій
@@ -71,6 +85,8 @@ galleryList.addEventListener("keydown", (evtClose) => {
 	 */
 	// onClose: (instance) => {}
 // https://github.com/electerious/basicLightbox#readme
+
+
 
 
 
