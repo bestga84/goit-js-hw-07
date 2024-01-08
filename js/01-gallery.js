@@ -59,6 +59,21 @@ galleryList.addEventListener("keydown", (evtClose) => {
 });
 
 
+// Правильна реалізація додавання і видалення слухачів для window в завданні 1 вимагає застосування цих опцій
+	/*
+	 * Function that gets executed before the lightbox will be shown.
+	 * Returning false will prevent the lightbox from showing.
+	 */
+	// onShow: (instance) => {},
+	/*
+	 * Function that gets executed before the lightbox closes.
+	 * Returning false will prevent the lightbox from closing.
+	 */
+	// onClose: (instance) => {}
+// https://github.com/electerious/basicLightbox#readme
+
+
+
 // ============================================
 // const instance = basicLightbox.create(`
 //     <h1>Dynamic Content</h1>
